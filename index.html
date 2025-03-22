@@ -3,16 +3,47 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portfolio</title>
   </head>
   <body>
     <nav>
       <ul>
+        <li><a href="index.html"><img src="" alt="Logo"></img></a></li>
+      </ul>
+      <ul>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="projets.html">Projets</a></li>
+      </ul>
+      <ul>
+        <input type="checkbox" class="check">
       </ul>
     </nav>
-      <div id="contact">
+    <div class="Content">
+      <div id="presentation" class="text textFR">
+        <h1>Qui suis-je ?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem hic reprehenderit sit vero nam dolor incidunt beatae accusantium, ipsam eos quisquam amet? Quis, reiciendis cum. Eum tempora rem vero.</p>
       </div>
+      <div id="presentation" class="text textEN">
+        <h1>Who am I ?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem hic reprehenderit sit vero nam dolor incidunt beatae accusantium, ipsam eos quisquam amet? Quis, reiciendis cum. Eum tempora rem vero.</p>
       </div>
-  </body>
+      <div id="contact" >
+        <h1 class="text textFR">Retrouvez moi ici</h1>
+        <h1 class="text textEN">Found me there</h1>
+        <a class="link" href="https://www.linkedin.com/in/william-bailleul-0ab233252/">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <p class="logotext">William Bailleul</p>
+        </a>
+        <div class="text textFR">
+          <h1>Téléchergez mon CV</h1>
+          <a href="img/CV-FR.pdf" download="CV-francais">
+            <i class="fa-solid fa-download fa-2x"></i>
+          </a>
+        </div>
+        <h1 class="text textEN">Download My CV</h1>
+        <a href="img/CV-EN" download="CV-english"></a>
+      </div>
+    </div>
+  </body> 
 </html>
