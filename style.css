@@ -8,6 +8,11 @@ html, body {
   scroll-snap-type: y mandatory;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Blob */
 .animated-blobs {
   position: fixed;
   top: 0; left: 0;
@@ -41,10 +46,7 @@ html, body {
   100% { transform: rotate(360deg) scale(1); }
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
+/* Navbar */
 .navbar.bg-dark {
   background-color: rgba(0, 0, 0, 0.3) !important; 
   transition: background-color 0.3s ease;
@@ -98,10 +100,77 @@ section {
   backdrop-filter: blur(4px); 
 }
 
-/* Contact */
-.contact-card {
+.medium-margin{
+  margin-bottom: 50px;
+}
+
+/* Presentation */
+
+.profile-img {
+  width: clamp(100px, 20vw, 200px);
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.floating-img {
+  margin-top: clamp(-100px, -150px,-200px);
+  z-index: 2;
+  position: relative;
+}
+
+.presentation{
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* Skill */
+.skill-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.3); 
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  min-height: 100%;
+}
+
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.skill-card p {
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Game cards inside */
+.game-card {
+  background-color: rgba(0, 0, 0, 0.3); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.game-card:hover {
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+.game-card p {
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Contact */
+.contact-card {
+  background-color: rgba(0, 0, 0, 0.3); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .contact-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);

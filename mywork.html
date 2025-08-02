@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Dev Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Dev Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+    <div class="animated-blobs"></div>
 
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">About me</a></li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section id="whoami" class="min-vh-100 d-flex flex-column justify-content-center align-items-center bg-primary text-white text-center">
-    <h1 class="display-4">Who Am I</h1>
-    <p class="lead">Video games have been a part of my life since I was a child. I grew it with with JRPG and soon got a Wii so i played it with my family. And since then my goal was to be part of its ecosytem.</p>
-  </section>
-
-  <section class="bg-dark text-white text-center d-flex flex-column justify-content-center align-items-center min-vh-100" id="contact">
-    <div class="container">
-      <h2 class="display-5 fw-bold">Contact</h2>
-      <p class="mb-5">Reach out at <a href="mailto:wbailleul@gaming.tech" class="text-decoration-none text-white">wbailleul@gaming.tech</a></p>
-
-      <div class="row justify-content-center">
-        <!-- LinkedIn -->
-        <div class="col-md-3 m-2">
-          <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/william-bailleul-0ab233252/">
-            <div class="p-4 border border-white rounded-4 h-100 contact-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="mb-3" style="width: 60px;">
-              <h5 class="fw-bold">LinkedIn</h5>
-              <p class="mb-0">William Bailleul</p>
-            </div>
-          </a>
-        </div>
-
-        <!-- GitHub -->
-        <div class="col-md-3 m-2">
-          <a class="text-decoration-none text-white" href="https://github.com/William-Bailleul">
-            <div class="p-4 border border-white rounded-4 h-100 contact-card">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="mb-3" style="width: 60px;">
-              <h5 class="fw-bold">GitHub</h5>
-              <p class="mb-0">William-Bailleul</p>
-            </div>
-          </a>
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">About me</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <section id="me" class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+      <div class="section-container">
+      </div>
+    </section>
+
+    <section id="work" class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+      <div class="container section-container">
+      </div>
+    </section>
+
+    <section id="contact" class="text-white text-center d-flex flex-column justify-content-center align-items-center min-vh-100" >
+      <div class="container section-container">
+        <h2 class="display-5 fw-bold">Contact</h2>
+        <p class="mb-3 fs-5">Reach out at <strong>wbailleul@gaming.tech</strong></p>
+        <h1>And also</h1>
+
+        <!-- Platforms -->
+        <div class="row justify-content-center">
+          <div class="col-md-3 m-2">
+            <a class="text-decoration-none text-white" href="https://www.linkedin.com/in/william-bailleul-0ab233252/">
+              <div class="p-4 border border-white rounded-4 h-100 contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="mb-3" style="width: 60px;">
+                <h5 class="fw-bold">LinkedIn</h5>
+                <p class="mb-0">William Bailleul</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 m-2">
+            <a class="text-decoration-none text-white" href="https://github.com/William-Bailleul">
+              <div class="p-4 border border-white rounded-4 h-100 contact-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="mb-3" style="width: 60px;">
+                <h5 class="fw-bold">GitHub</h5>
+                <p class="mb-0">William-Bailleul</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Downloadable Resume -->
+        <div class="row justify-content-center">
+          <div class="col-md-3 m-2">
+            <a class="text-decoration-none text-white" href="img/Documents/CV-FR.pdf">
+              <div class="p-4 border border-white rounded-4 h-100 contact-card">
+                <img src="img/Logos/Download.png" alt="Download" class="mb-3" style="width: 60px;">
+                <p class="mb-0">Download My Resume</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
