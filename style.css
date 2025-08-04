@@ -102,8 +102,8 @@ section {
 
 @media (max-width: 768px) {
   .section-spacing {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
   }
 }
 
