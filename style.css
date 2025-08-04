@@ -100,6 +100,13 @@ section {
   backdrop-filter: blur(4px); 
 }
 
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .medium-margin{
   margin-bottom: 50px;
 }
