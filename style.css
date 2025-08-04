@@ -100,10 +100,15 @@ section {
   backdrop-filter: blur(4px); 
 }
 
+.fullscreen-section {
+  min-height: 100vh;
+}
+
 @media (max-width: 768px) {
-  .section-spacing {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+  .fullscreen-section {
+    min-height: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
 
