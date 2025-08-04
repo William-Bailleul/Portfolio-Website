@@ -107,7 +107,7 @@ section {
 @media (max-width: 450px) {
   .fullscreen-section {
     min-height: auto;
-    margin-top: 6rem;
+    margin-top: 15rem;
     margin-bottom: 6rem;
   }
 }
