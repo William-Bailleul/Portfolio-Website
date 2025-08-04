@@ -104,7 +104,7 @@ section {
   min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .fullscreen-section {
     min-height: auto;
     margin-top: 6rem;
