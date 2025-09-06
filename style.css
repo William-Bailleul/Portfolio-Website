@@ -117,7 +117,6 @@ section {
 }
 
 /* Presentation */
-
 .profile-img {
   width: clamp(100px, 20vw, 200px);
   height: auto;
@@ -157,7 +156,7 @@ section {
   text-align: center;
 }
 
-/* Game cards inside */
+/* Game Cards Inside */
 .game-card {
   background-color: rgba(0, 0, 0, 0.3); 
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -178,9 +177,12 @@ section {
 }
 
 /* Project Card */
-
 .section-project-container {
   max-width: 1200px;
+}
+
+.bg-white {
+  --bs-bg-opacity: 0.15 !important;
 }
 
 /* Contact */
