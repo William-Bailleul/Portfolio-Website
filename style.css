@@ -69,9 +69,20 @@ body::-webkit-scrollbar {
 }
 
 .navbar a,
-.navbar .nav-link,
-.navbar-brand {
+.navbar .nav-link {
   color: white !important;
+}
+
+.navbar-text {
+  font-size: 1.2rem; /* adjust as needed */
+  font-weight: 500;  /* a bit bolder */
+}
+
+.separator {
+  color: white;       /* same color as text */
+  margin: 0 10px;     /* spacing around the bar */
+  font-size: 1.2rem;  /* same size as text */
+  font-weight: 300;   /* slightly lighter than text */
 }
 
 .navbar-toggler {
